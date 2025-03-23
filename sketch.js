@@ -16,9 +16,22 @@ function draw() {
   }
 
   for(var x = 0; x <= width; x += 50){
-    fill(255,0, 200);
-    ellipse(x, 300, 25, 25)
-
+    for(var y = 0; y <= 500; y += 10){
+      fill(y,y, y);
+      ellipse(x, 300, 25, 25)
+    }
   }
+
+  fill(0,0, 200);
+  ellipse(0, 350, 25, 25)
+
+  fill(80,0, 200);
+  ellipse(50, 350, 25, 25)
+
+  fill(160,0, 200);
+  ellipse(100, 350, 25, 25)
  
+  fill(240,0, 200);
+  ellipse(150, 350, 25, 25)
 }
+
